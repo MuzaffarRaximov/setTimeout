@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.slider{
+    width: 80%;
+    height: 540px;
+    overflow: hidden;
+}
+.list{
+    display: flex;
+    /* transition: all 0.3s ease-in-out; */
+
+}
+.item{
+   min-width:1500px;
+    height: 540px;
+    background:url(https://cdn.pixabay.com/photo/2022/08/02/01/12/airplane-7359232_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 2px;
+}
+.item:nth-child(2){
+    background:url(https://cdn.pixabay.com/photo/2013/08/06/19/13/plane-170272_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.item:nth-child(3){
+    background:url(https://cdn.pixabay.com/photo/2014/11/02/10/41/plane-513641_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.next{
+    position: absolute;
+    right: 190px;
+    top: 520px;
+    font-size: 30px;
+    padding: 8px;
+    background-color:rgba(0, 0, 0, 0.273);
+    color: #fff;
+    cursor: pointer;
+}
+.next:active{
+    background-color: rgba(0, 0, 0, 0.466);
+}
+.prev{
+    position: absolute;
+    left: 190px;
+    top: 520px;
+    font-size: 30px;
+    padding: 8px;
+    background-color:rgba(0, 0, 0, 0.273);
+    color: #fff;
+    cursor: pointer;
+}
+.prev:active{
+    background-color: rgba(0, 0, 0, 0.468);
+}
+
+.flex{
+    display: flex !important;
+}
